@@ -1,5 +1,4 @@
 
-
 h1 { 
     font-size: 22px; 
     color: blue; 
@@ -9,6 +8,17 @@ h1 {
 h4 { 
     font-size: 15px; 
     color: black;
+}
+
+.list-group {
+    margin-top: 125px; 
+    margin-left: 45px;
+    width: 500px;
+}
+
+#img_il{
+    margin-top:45px;
+    max-width: 450px;
 }
 
 h5 { 
