@@ -1,13 +1,12 @@
-
-
-
 h1 { 
     font-size: 22px; 
     color: blue; 
+    text-align: center;
 }
 
 h4 { 
     font-size: 15px; 
+    color: black;
 }
 
 .list-group {
@@ -19,4 +18,14 @@ h4 {
 #img_il{
     margin-top:45px;
     max-width: 450px;
+}
+
+h5 { 
+    font-size: 15px;
+    color: green; 
+}
+
+h6 { 
+    font-size: 15px;
+    color: green 
 }
