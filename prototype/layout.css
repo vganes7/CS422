@@ -9,3 +9,14 @@ h1 {
 h4 { 
     font-size: 15px; 
 }
+
+.list-group {
+    margin-top: 125px; 
+    margin-left: 45px;
+    width: 500px;
+}
+
+#img_il{
+    margin-top:45px;
+    max-width: 450px;
+}
