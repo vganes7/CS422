@@ -1,11 +1,22 @@
 
 
-
 h1 { 
     font-size: 22px; 
     color: blue; 
+    text-align: center;
 }
 
 h4 { 
     font-size: 15px; 
+    color: black;
+}
+
+h5 { 
+    font-size: 15px;
+    color: green; 
+}
+
+h6 { 
+    font-size: 15px;
+    color: green 
 }
