@@ -1,36 +1,47 @@
 <!DOCTYPE html>
 <html>
     <title>Sticker - DMV Services</title>
-    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal2"
+    <link rel="stylesheet" href="layout.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<body>
+
+    <h1>Renew Your License Plate</h1>
+        <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal2"
         width="150" height="150" align="right">
-    <h2>Renew Your License Plate</h2>
-    
-    <h4>Registration Pin and ID</h4>
-    <p>Type in your registration pin and ID found on your registration card.</p>
-    <p>If you do not have a registration card, please call the Public Inquiry Division</p>
-    <p>at 800-252-8900 toll free. </p>
-    
-    
-    Registration ID:<br>
-    <input type = "text"><br>
-        
-        Pin:<br>
-        <input type = "text"><br>
-            
-            Year Manufactured:<br>
-            <input type = "number"><br>
-                
-                Vehicle Maker:<br>
-                <input type = "text"><br>
-                    
-                    Vehicle Body:<br>
-                    <input type = "text"><br>
-                        
+    <div class="container">
+        <div class="row">
+            <div class = "col">
+                    <h4>Registration Pin and ID</h4>
+                    <p>Type in your registration pin and ID found on your registration card.</p>
+                    <p>If you do not have a registration card, please call the Public Inquiry Division</p>
+                    <p>at 800-252-8900 toll free. </p>
+                    <div class="form-group">
+                        Registration ID:<br>
+                        <input type = "text" class="form-control">
+                    </div>
+                    <div class="form-group">        
+                        Pin:<br>
+                        <input type = "text" class="form-control">
+                    </div>
+                    <div class="form-group">        
+                        Year Manufactured:<br>
+                        <input type = "number" class="form-control">
+                    </div>
+                    <div class="form-group">        
+                        Vehicle Maker:<br>
+                        <input type = "text" class="form-control"><br>
+                    </div>
+                    <div class="form-group">        
+                        Vehicle Body:<br>
+                        <input type = "text" class="form-control"><br>
+                    </div>
+                    <div class="form-group">        
                         Plate Number:<br>
-                        <input type = "number"><br>
-                            
+                        <input type = "number" class="form-control"><br>
+                    </div>
+                    <div class="form-group">        
                             County:<br>
-                            <select name = "counties">
+                            <select name = "counties" class="form-control">
                                 <option value = "Cook">Cook</option>
                                 <option value = "DuPage">DuPage</option>
                                 <option value = "McHenry">McHenry</option>
@@ -38,22 +49,21 @@
                                 <option value = "Lake">Lake</option>
                                 <option value = "Will">Will</option>
                             </select>
-                            
-                            
-                            
-                            
-                            <h4>Renewal Fee</h4>
-                            <p>Total: 101.00 USD</p>
-                            <h6>Credit card information on hold will be used for processing.</h6>
-                            
-                            <br><br>
-                            
-                            
-                            <button>Submit for approval</button>
-                            <p>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within</p>
-                            <p>30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will</p>
-                            <p>be approved within 2-3 business days.</p><br><br>
-                            
-                            <p>If approved, sticker will be mailed within 5-7 business days.</p>
-                            
+                    </div>
+                    
+                    <h4>Renewal Fee</h4>
+                    <p>Total: 101.00 USD</p>
+                    <h6>Credit card information on hold will be used for processing.</h6>
+                    <br>             
+                    
+                    <button class="btn btn-primary">Submit for approval</button><br>
+                    <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
+                    30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will
+                    be approved within 2-3 business days.</small><br><br>
+                    <p>If approved, sticker will be mailed within 5-7 business days.</p>
+                    </div>
+            </div>
+        </div>
+    </div>
+</body>            
 </html>
