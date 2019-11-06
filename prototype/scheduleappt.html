@@ -1,29 +1,44 @@
 <!DOCTYPE html>
 <html>
-
-    <div style = "position:relative; left:250px; top:10px;">
-        <h2> Schedule an appointment with a DMV representative</h2>
-
-        <p>Please use the controls to schedule a 30 minute appointment with a DMV representative</p>
-        <p>All appointments are weekdays only from 8am-5pm. Please plan appropriately. </p>
-        <p>Once you schedule an appointment, you will receive a confirmation email. A DMV </p>
-        <p>representative will be contacted confirming your appointment.</p>
-        <p>You may cancel your appointment at any time and your DMV representative will be alerted.</p>
-        <p>Multiple appointments are allowed if necessary. </p>
-        <br><br><br>
-
-        <h4>Your Local DMV location</h4>
-        <p>Chicago Loop Express Illinois Secretary of State Facility</p>
-        <p>69 W Washington St, Chicago, IL 60602</p>
-        <p>Telephone: (312) 793-1010</p>
-
-        <br><br>
-
-
-        <input type = "date" class = "date_input">
-        <input type = "time" class = "time_input"> 
-        <br><br><br>
-
-        <button id = "submit_button">Submit</button>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="layout.css">
+<body>
+    <div class = "container">
+        <div class="row">
+            <div class="col">
+                    <br>
+                    <h2> Schedule an appointment with a DMV representative</h2>
+                    <br>
+                
+                    <p>Please use the controls to schedule a 30 minute appointment with a DMV representative</p>
+                    <p>All appointments are weekdays only from 8am-5pm. Please plan appropriately. </p>
+                    <p>Once you schedule an appointment, you will receive a confirmation email. A DMV </p>
+                    <p>representative will be contacted confirming your appointment.</p>
+                    <p>You may cancel your appointment at any time and your DMV representative will be alerted.</p>
+                    <p>Multiple appointments are allowed if necessary. </p>
+                    
+                    <div id = "box" class="form-group">
+                    <h4>Your Local DMV location</h4>
+                    <p>Chicago Loop Express Illinois Secretary of State Facility</p>
+                    <p>69 W Washington St, Chicago, IL 60602</p>
+                    <p>Telephone: (312) 793-1010</p>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type = "date" class="input-group-text">
+                        </div>
+                        <div class="form-group">
+                            <input type = "time" class="input-group-text"> 
+                        </div>
+                        
+                    </div>
+                    <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+            
+            </div>
+        </div>
     </div>
+       
+</body>
 </html>
