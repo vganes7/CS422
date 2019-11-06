@@ -11,7 +11,7 @@ h4 {
 }
 
 .list-group {
-    margin-top: 125px; 
+    margin-top: 75px; 
     margin-left: 45px;
     width: 500px;
 }
@@ -29,4 +29,17 @@ h5 {
 h6 { 
     font-size: 15px;
     color: green 
+}
+
+.form-group{
+    width: 272px;
+}
+
+#intro_col1{
+    margin-top: 85px;
+}
+
+#intro_col2{
+    margin-top: 85px;
+    margin-left: 100px;
 }
