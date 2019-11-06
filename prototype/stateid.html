@@ -1,59 +1,38 @@
 <!DOCTYPE html>
 <html>
-    <title>Sticker - DMV Services</title>
-    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal2"
-        width="150" height="150" align="right">
-    <h2>Renew Your License Plate</h2>
-    
-    <h4>Registration Pin and ID</h4>
-    <p>Type in your registration pin and ID found on your registration card.</p>
-    <p>If you do not have a registration card, please call the Public Inquiry Division</p>
-    <p>at 800-252-8900 toll free. </p>
-    
-    
-    Registration ID:<br>
-    <input type = "text"><br>
-        
-        Pin:<br>
-        <input type = "text"><br>
-            
-            Year Manufactured:<br>
-            <input type = "number"><br>
-                
-                Vehicle Maker:<br>
-                <input type = "text"><br>
-                    
-                    Vehicle Body:<br>
-                    <input type = "text"><br>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="layout.css">
+            <title>State ID - DMV Services</title>
+            <body>
+                <div class="container">
+                    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal3"
+                        width="150" height="150" align="right">
+                        <br>
+                        <h1>Get a State Identification Card </h1><br>
                         
-                        Plate Number:<br>
-                        <input type = "number"><br>
+                        <p>All residents must submit the required documents to be considered for a state ID.</p>
+                        <p>All documents must be original. Copies of documents will not be allowed. The system and</p>
+                        <p>DMV representatives will verify originality of documents.</p>
+                        <p>All documents will be submitted as proof of residency under Illinois law.</p><br>
+                        
+                        <h5>You must show proof a Social Security Number</h5>
+                        <p>Acceptable documents include Social Security card, military record, or driver's license record. </p>
+                        <input class="input-group-text" type = "file"> <br>
                             
-                            County:<br>
-                            <select name = "counties">
-                                <option value = "Cook">Cook</option>
-                                <option value = "DuPage">DuPage</option>
-                                <option value = "McHenry">McHenry</option>
-                                <option value = "Kankakee">Kankakee</option>
-                                <option value = "Lake">Lake</option>
-                                <option value = "Will">Will</option>
-                            </select>
-                            
-                            
-                            
-                            
-                            <h4>Renewal Fee</h4>
-                            <p>Total: 101.00 USD</p>
-                            <h6>Credit card information on hold will be used for processing.</h6>
-                            
-                            <br><br>
-                            
-                            
-                            <button>Submit for approval</button>
-                            <p>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within</p>
-                            <p>30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will</p>
-                            <p>be approved within 2-3 business days.</p><br><br>
-                            
-                            <p>If approved, sticker will be mailed within 5-7 business days.</p>
-                            
+                            <h5>You must show your date of birth.</h5>
+                            <p>Acceptable documents include birth certificate, passport, or high school record.</p>
+                            <p>Non-US documents are accepted as long as date of birth is accurate.</p>
+                            <input class="input-group-text" type = "file"><br>
+                                
+                                <h5>You must show proof of residency.</h5>
+                                <p>Acceptable documents include utility bill, government issued letter, or a bank statement.</p>
+                                <p>To become a full time resident of Illinois, you must maintain your residence for at least one full year.</p>
+                                <input class="input-group-text" type = "file"><br><br>
+                                    
+                                    <button type="submit" class="btn btn-primary">Submit</button><br>
+                                    <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
+                                        30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will
+                                        be approved within 2-3 business days.</small>
+                                    </div>
+            </body>
 </html>
