@@ -52,6 +52,9 @@ h6 {
 .main_seg{
     margin-left: 150px;
 }
-#illinois_seal{
-    margin-top: -115px;
+
+#box{
+    border: 1px solid;
+    padding: 10px;
+    width: 50%;
 }
