@@ -1,17 +1,16 @@
-
-h1 { 
-    font-size: 22px; 
-    color: blue; 
+h1 {
+    font-size: 22px;
+    color: blue;
     text-align: center;
 }
 
-h4 { 
-    font-size: 15px; 
+h4 {
+    font-size: 15px;
     color: black;
 }
 
 .list-group {
-    margin-top: 75px; 
+    margin-top: 75px;
     margin-left: 45px;
     width: 500px;
 }
@@ -21,17 +20,17 @@ h4 {
     max-width: 450px;
 }
 
-h5 { 
+h5 {
     font-size: 15px;
-    color: green; 
+    color: green;
 }
 
-h6 { 
+h6 {
     font-size: 15px;
-    color: green 
+    color: green
 }
 
-#intro-form{
+.form-group{
     width: 272px;
 }
 
@@ -47,20 +46,22 @@ h6 {
 #licence_header{
     margin-top: 20px;
     margin-left: 50px;
+    color: blue;
+    text-align:center;
 }
 
 .main_seg{
     margin-left: 150px;
 }
-
 #box{
     border: 1px solid;
     padding: 10px;
     width: 50%;
 }
+
 #illinois_seal{
     margin-top: -115px;
 }
 #illinois_seal2{
-   margin-top: -75px;
+   margin-top: -70px;
 }
