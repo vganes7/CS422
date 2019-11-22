@@ -63,7 +63,12 @@ h6 {
     margin-top: -115px;
 }
 #illinois_seal2{
-   margin-top: -70px;
+    margin-left: 89%;
+    position: inline;
+    margin-top: -110px;
+    height: 106px;
+    width: 115px;
+    border-radius: 50%;
 }
 #illinois_seal3{
     margin-top: 30px;
