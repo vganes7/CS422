@@ -1,12 +1,19 @@
 h1 {
     font-size: 22px;
-    color: blue;
+    color: black;
     text-align: center;
+    font-style: Arial;
+    font-weight: bold;
 }
+
+
 
 h4 {
     font-size: 15px;
-    color: black;
+    color: white;
+    font-style: Arial;
+    font-weight: bold;
+]
 }
 
 .list-group {
@@ -22,16 +29,23 @@ h4 {
 
 h5 {
     font-size: 15px;
-    color: green;
+    color: red;
+    font-style: Arial;
+    font-weight: bold;
 }
 
 h6 {
     font-size: 15px;
-    color: green
+    color: green;
+    font-style: Arial;
+    font-weight: bold;
 }
 
 .form-group{
     width: 272px;
+    color: black;
+    font-style: Arial;
+    font-weight: bold;
 }
 
 #intro_col1{
@@ -61,6 +75,11 @@ h6 {
 
 #illinois_seal{
     margin-top: -115px;
+    margin-left: 89%;
+    position: inline;
+    height: 106px;
+    width: 115px;
+    border-radius: 50%;
 }
 #illinois_seal2{
     margin-left: 89%;
@@ -76,8 +95,39 @@ h6 {
 #illinois_seal4{
     margin-top: -30px;
 }
-#dmvmap{
-    margin-top: -315px;
-    margin-left: -140px;
-    border: 5px solid black;
+#map{
+    height: 350px;  /* The height is 400 pixels */
+    width: 80%;  /* The width is the width of the web page */
+    margin: 0px auto;
+    display: inline-block;
+}
+.bodybg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('https://images5.alphacoders.com/554/554547.jpg' );
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+} 
+.bodybg2 {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url('img/chicago.jpg');
+    background-repeat: no-repeat; 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
 }
