@@ -1,33 +1,104 @@
 <!DOCTYPE html>
 
 <html>
-    <script>
-        </script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="layout.css">
-            <title>Menu - DMV Services</title>
-            <body id = "body_two"> <br><br>
-                <h1>DEPARTMENT OF MOTOR VEHICLE</h1>
-                <div class="container" style="background-image: url('img/capitol.PNG'); background-repeat: no-repeat; background-size: 100% 120%; " >  
-                    <div class="row">
-                        <div class="col" id="img_il"> 
-                                </div>
-                        <div class="col" id="menu_content">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item list-group-item-action active">
-                                    What can we help you with today?
-                                </a>
-                                <a href="#" class="list-group-item list-group-item-action">Renew my driver's license</a>
-                                <a href="getlicense.html" class="list-group-item list-group-item-action">Get a new driver's license</a>
-                                <a href="sticker.html" class="list-group-item list-group-item-action">Receive a new sticker</a>
-                                <a href="#" class="list-group-item list-group-item-action">Report a vehicle</a>
-                                <a href="stateid.html" class="list-group-item list-group-item-action">Get a state ID</a>
-                                <a href="scheduleappt.html" class="list-group-item list-group-item-action">Schedule an appointment with a DMV representative</a>
-                            </div>
-                        </div>
-                        <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal2"
-                            width="150" height="150" alt="Illinois State Seal">
-                    </div>
-                </div>
-            </body>
+<style>
+    .dot_set1 {
+        height: 149px;
+        width: 148px;
+        background: white;
+        color: black;
+        margin-right: 10px;
+        border-radius: 50%;
+        display: inline-table;
+        text-align: center;
+        padding-top: 52px;
+        margin-bottom: 30px;
+        margin-left: 171px;
+        font-size: 18px;
+    }
+
+    .dot_set2 {
+        height: 149px;
+        width: 148px;
+        background: white;
+        color: black;
+        margin-left: 336px;
+        margin-right: -130px;
+        border-radius: 50%;
+        display: inline-table;
+        text-align: center;
+        padding-top: 52px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .dot_set3 {
+        height: 149px;
+        width: 148px;
+        background: white;
+        color: black;
+        margin-left: 517px;
+        margin-right: 10px;
+        border-radius: 50%;
+        display: inline-table;
+        text-align: center;
+        padding-top: 57px;
+        font-size: 18px;
+    }
+
+    .container {
+        padding-top: 8px;
+    }
+</style>
+<script>
+    function change(x){
+        x.style.background = "rgb(255,233,15)";
+        
+    }
+    function normalImg(x){
+        x.style.background = "white";
+    }
+
+</script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="layout.css">
+
+<title>Menu - DMV Services</title>
+
+
+<body id="body_two" style="background-image: url('img/chicago.jpg'); background-repeat: no-repeat;"> <br><br>
+    <h2 style="color: white; font-family: 'Literata', serif;">DEPARTMENT OF MOTOR VEHICLE</h2> <br>
+    <h3 style="text-align:center;color: white;">What can we help you with today?</h3>
+    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal2"
+            width="150" height="150" alt="Illinois State Seal">
+    <div class="container">
+        <div class="row">
+            <!-- <div class="col" id="img_il"> 
+                                </div> -->
+            <div style="text-align:center">
+                
+                <span class="dot_set1" onmouseover="change(this)" onmouseout="normalImg(this)">Get a state ID </span>
+                <span class="dot_set1" onmouseover="change(this)" onmouseout="normalImg(this)">Schedule Appointment</span>
+                <span class="dot_set1" onmouseover="change(this)" onmouseout="normalImg(this)"
+                >Renew Driver license</span>
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align:center">
+                <span class="dot_set2" onmouseover="change(this)" onmouseout="normalImg(this)">Apply for new driver's license</span>
+                <span class="dot_set2" onmouseover="change(this)" onmouseout="normalImg(this)">Receive a New sticker</span>
+
+            </div>
+        </div>
+        <div class="row">
+            <div style="text-align:center">
+                <span class="dot_set3" onmouseover="change(this)" onmouseout="normalImg(this)">Report Vehicle</span>
+            </div>
+        </div>
+        
+    </div>
+    </div>
+</body>
+
 </html>
