@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+
+
+<script>
+
+function makeClear(element_name) { 
+    //element_name is a string input that will 
+
+    document.getElementById(element_name).value = ''; 
+    console.log(document.getElementById(element_name).value);  
+
+}
+
+
+
+
+
+</script>
+
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link rel="stylesheet" href="layout.css">
             <title>State ID - DMV Services</title>
@@ -17,17 +36,20 @@
                         
                         <h5>You must show proof a Social Security Number</h5>
                         <p>Acceptable documents include Social Security card, military record, or driver's license record. </p>
-                        <input class="input-group-text" type = "file"> <br>
+                        <input class="input-group-text" id = "file1" type = "file"> 
+                        <a href="#" id="clear1" onclick = "makeClear('file1')">Clear</a><br>
                             
                             <h5>You must show your date of birth.</h5>
                             <p>Acceptable documents include birth certificate, passport, or high school record.</p>
                             <p>Non-US documents are accepted as long as date of birth is accurate.</p>
-                            <input class="input-group-text" type = "file"><br>
+                            <input class="input-group-text" id = "file2" type = "file">
+                            <a href="#" id="clear2"  onclick = "makeClear('file2')">Clear</a><br>
                                 
                                 <h5>You must show proof of residency.</h5>
                                 <p>Acceptable documents include utility bill, government issued letter, or a bank statement.</p>
                                 <p>To become a full time resident of Illinois, you must maintain your residence for at least one full year.</p>
-                                <input class="input-group-text" type = "file"><br><br>
+                                <input class="input-group-text" id = "file3" type = "file">
+                                <a href="#" id="clear3" onclick = "makeClear('file3')">Clear</a><br><br>
                                     
                                     <button type="submit" class="btn btn-primary">Submit</button><br>
                                     <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
