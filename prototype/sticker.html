@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 
-<script> 
+<script>
 
-function showTheYear() { 
-    console.log(document.getElementById("years").value);  
-    document.getElementById("label1").innerHTML = document.getElementById("years").value; 
-}
+    function showTheYear() {
+        console.log(document.getElementById("years").value);
+        document.getElementById("label1").innerHTML = document.getElementById("years").value;
+    }
 
 </script>
 
@@ -14,85 +14,97 @@ function showTheYear() {
 
 
 
-    <title>Sticker - DMV Services</title>
-    <link rel="stylesheet" href="layout.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<title>Sticker - DMV Services</title>
+<link rel="stylesheet" href="layout.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
 <body>
     <br>
     <h3 style='color:orange; font: 20px; font-style: Arial;
-    font-weight: bold; text-decoration: underline;' >Renew Your License Plate</h3><br>
-    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal5"
-    width="150" height="150" align="right" alt="Illinois State Seal">
+    font-weight: bold; text-decoration: underline;'>Renew Your License Plate</h3><br>
+    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal5" width="150"
+        height="150" align="right" alt="Illinois State Seal">
     <div class="container">
         <div class="row">
-            <div class = "col">
-                    <h4>Registration Pin and ID</h4>
-                    <p>Type in your registration pin and ID found on your registration card.</p>
-                    <p>If you do not have a registration card, please call the Public Inquiry Division</p>
-                    <p>at 800-252-8900 toll free. </p>
-                    <div class="form-group">
-                        Registration ID:<br>
-                        <input type = "text" class="form-control">
-                    </div>
-                    <div class="form-group" id = "_pin">        
-                        Pin:<br>
-                        <input type = "text" class="form-control" value = "0">
-                    </div>
-                    <div class="form-group">        
-                        Year Manufactured: <br>
-                        <p id = "label1"></p>
-                        <input type = "range" id = "years" class="form-control" min = "1960" max = "2019" step = "1" value = "2019" onchange = "showTheYear();">
-                        <br>
-                    </div>
-                    <div class="form-group">        
-                        Vehicle Maker:<br>
-                        <select name = "vehicle_makers" class="form-control">
-                            <option value = "Toyota">Toyota</option>
-                            <option value = "Honda">Honda</option>
-                            <option value = "Nissan">Nissan</option>
-                            <option value = "Hyundai">Hyundai</option>
-                            <option value = "Chrysler">Chrysler</option>
-                            <option value = "Chevrolet">Chevrolet</option>
-                            <option value = "Lincoln">Lincoln</option>
-                            <option value = "Audi">Audi</option>
-                            <option value = "BMW">BMW</option>
-                            <option value = "Porsche">Porsche</option>
-                            <option value = "Volkswagen">Volkswagen</option>
-                        </select>
-                    </div>
-                    <div class="form-group">        
-                        Vehicle Body:<br>
-                        <input type = "text" class="form-control"><br>
-                    </div>
-                    <div class="form-group">        
-                        Plate Number:<br>
-                        <input type = "number" class="form-control"><br>
-                    </div>
-                    <div class="form-group">        
-                            County:<br>
-                            <select name = "counties" class="form-control">
-                                <option value = "Cook">Cook</option>
-                                <option value = "DuPage">DuPage</option>
-                                <option value = "McHenry">McHenry</option>
-                                <option value = "Kankakee">Kankakee</option>
-                                <option value = "Lake">Lake</option>
-                                <option value = "Will">Will</option>
-                            </select>
-                    </div>
+            <div class="col">
+                <ul class="breadcrumb" style="background-color: transparent;">
+                    <li><a href="./introscreen.html">Login </a><span class="divider">/</span></li>
+                    <li><a href="./menuscreen.html">Menu </a><span class="divider">/</span></li>
+                    <li class="breadcrumb-item active">Renew License Plate <span class="divider">/</span></li>
+                </ul>
+                <h4>Registration Pin and ID</h4>
+                <p>Type in your registration pin and ID found on your registration card.</p>
+                <p>If you do not have a registration card, please call the Public Inquiry Division</p>
+                <p>at 800-252-8900 toll free. </p>
+                <div class="form-group">
+                    Registration ID:<br>
+                    <input type="text" class="form-control">
+                </div>
+                <div class="form-group" id="_pin">
+                    Pin:<br>
+                    <input type="text" class="form-control" value="0">
+                </div>
+                <div class="form-group">
+                    Year Manufactured: <br>
+                    <p id="label1"></p>
+                    <input type="range" id="years" class="form-control" min="1960" max="2019" step="1" value="2019"
+                        onchange="showTheYear();">
                     <br>
-                    <h4>Renewal Fee</h4>
-                    <p>Total: 101.00 USD</p>
-                    <h6>Credit card information on hold will be used for processing.</h6>
-                    <br>             
-                    
-                    <button class="btn btn-primary" id = "submit_btn"><a href = "confirmation.html">Submit for approval</a></button><br>
-                    <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
-                    30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will
+                </div>
+                <div class="form-group">
+                    Vehicle Maker:<br>
+                    <select name="vehicle_makers" class="form-control">
+                        <option value="Toyota">Toyota</option>
+                        <option value="Honda">Honda</option>
+                        <option value="Nissan">Nissan</option>
+                        <option value="Hyundai">Hyundai</option>
+                        <option value="Chrysler">Chrysler</option>
+                        <option value="Chevrolet">Chevrolet</option>
+                        <option value="Lincoln">Lincoln</option>
+                        <option value="Audi">Audi</option>
+                        <option value="BMW">BMW</option>
+                        <option value="Porsche">Porsche</option>
+                        <option value="Volkswagen">Volkswagen</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    Vehicle Body:<br>
+                    <input type="text" class="form-control"><br>
+                </div>
+                <div class="form-group">
+                    Plate Number:<br>
+                    <input type="number" class="form-control"><br>
+                </div>
+                <div class="form-group">
+                    County:<br>
+                    <select name="counties" class="form-control">
+                        <option value="Cook">Cook</option>
+                        <option value="DuPage">DuPage</option>
+                        <option value="McHenry">McHenry</option>
+                        <option value="Kankakee">Kankakee</option>
+                        <option value="Lake">Lake</option>
+                        <option value="Will">Will</option>
+                    </select>
+                </div>
+                <br>
+                <h4>Renewal Fee</h4>
+                <p>Total: 101.00 USD</p>
+                <h6>Credit card information on hold will be used for processing.</h6>
+                <br>
+
+                <button class="btn btn-primary" id="submit_btn"><a href="confirmation.html">Submit for
+                        approval</a></button><br>
+                <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved
+                    within
+                    30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays
+                    will
                     be approved within 2-3 business days.</small><br><br>
-                    <p>If approved, sticker will be mailed within 5-7 business days.</p>
-                    </div>
+                <p>If approved, sticker will be mailed within 5-7 business days.</p>
             </div>
         </div>
     </div>
-</body>            
+    </div>
+</body>
+
 </html>
