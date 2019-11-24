@@ -1,5 +1,24 @@
 <!DOCTYPE html>
 <html>
+
+        <script>
+
+                function makeClear(element_name) { 
+                    //element_name is a string input that will 
+                
+                    document.getElementById(element_name).value = ''; 
+                    console.log(document.getElementById(element_name).value);  
+                
+                }
+                
+                
+                
+                
+                
+                </script>
+
+
+
     <body>
         
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -23,11 +42,15 @@
                         <form>
                             <div class="form-group">
                                 <input class="input-group-text" type = "file" id = "certification_upload"
-                                    accept = "certificate/pdf, certificate/png, certificate/jpeg"><br>
+                                    accept = "certificate/pdf, certificate/png, certificate/jpeg">
+                                    <a href="#" id="clear1" onclick = "makeClear('certification_upload')">Clear</a>
+                                    <br>
                                     
                                     <p>Please upload a photo of yourself taken in front a blue colored background. </p>
                                     <input class="input-group-text" type = "file" id = "photo_upload"
-                                    accept = "photo/png, photo/jpeg"> <br>
+                                    accept = "photo/png, photo/jpeg"> 
+                                    <a href="#" id="clear2" onclick = "makeClear('photo_upload')">Clear</a>
+                                    <br>
                                     <p>Please input your permit number</p>
                                     <input type = "number" class="input-group-text" id = "number_input"><br>
                                     <p>Please schedule an appointment to take your behind the wheel exam with a DMV representative.</p>
@@ -36,7 +59,7 @@
                                             <input type="date" class="input-group-text" id = "date_input">
                                         </div>
                                         <div class="form-group">
-                                            <input type="time" class="input-group-text"> <br>
+                                            <input type="time" value="08:30:00" step="1800" class="input-group-text"> <br>
                                         </div>
                                     </div>
                                     <button type="submit" class="btn btn-primary">Submit for approval</button><br>
