@@ -87,14 +87,6 @@ h6 {
     width: 50%;
 }
 
-#illinois_seal{
-    margin-top: -115px;
-    margin-left: 89%;
-    position: inline;
-    height: 106px;
-    width: 115px;
-    border-radius: 50%;
-}
 #illinois_seal2{
     margin-left: 89%;
     position: inline;
@@ -103,12 +95,7 @@ h6 {
     width: 115px;
     border-radius: 50%;
 }
-#illinois_seal3{
-    margin-top: 30px;
-}
-#illinois_seal4{
-    margin-top: -30px;
-}
+
 #map{
     height: 350px;  /* The height is 400 pixels */
     width: 80%;  /* The width is the width of the web page */
