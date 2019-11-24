@@ -7,6 +7,12 @@
         console.log(document.getElementById("years").value);
         document.getElementById("label1").innerHTML = document.getElementById("years").value;
     }
+    
+    function alertfunc() {
+        if (confirm("Do you want to exit the Page?")) {
+            window.location.href = 'menuscreen.html';
+        }
+    }
 
 </script>
 
@@ -95,6 +101,8 @@
 
                 <button class="btn btn-primary" id="submit_btn" onclick="window.location.href='confirmationappt.html'">Submit for
                         approval</button><br>
+                <button type="button" class="btn btn-primary" onclick="alertfunc()"
+                        style="margin-left: 30px;">Cancel</button><br>
                 <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved
                     within
                     30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays
