@@ -4,13 +4,13 @@
 
 <script>
 
-function makeClear(element_name) { 
-    //element_name is a string input that will 
+    function makeClear(element_name) {
+        //element_name is a string input that will 
 
-    document.getElementById(element_name).value = ''; 
-    console.log(document.getElementById(element_name).value);  
+        document.getElementById(element_name).value = '';
+        console.log(document.getElementById(element_name).value);
 
-}
+    }
 
 
 
@@ -19,42 +19,50 @@ function makeClear(element_name) {
 </script>
 
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <link rel="stylesheet" href="layout.css">
-            <title>State ID - DMV Services</title>
-            <body>
-                <div class="container" style = "background-image: url('img/stateidimg.PNG'); background-repeat: no-repeat; background-size: 25% 25%; background-position-x: right; background-position-y: center;">
-                    <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal3"
-                        width="150" height="150" align="right" alt="Illinois State Seal">
-                        <br>
-                        <h1>Get a State Identification Card </h1><br>
-                        
-                        <p>All residents must submit the required documents to be considered for a state ID.</p>
-                        <p>All documents must be original. Copies of documents will not be allowed. The system and</p>
-                        <p>DMV representatives will verify originality of documents.</p>
-                        <p>All documents will be submitted as proof of residency under Illinois law.</p><br>
-                        
-                        <h5>You must show proof a Social Security Number</h5>
-                        <p>Acceptable documents include Social Security card, military record, or driver's license record. </p>
-                        <input class="input-group-text" id = "file1" type = "file"> 
-                        <a href="#" id="clear1" onclick = "makeClear('file1')">Clear</a><br>
-                            
-                            <h5>You must show your date of birth.</h5>
-                            <p>Acceptable documents include birth certificate, passport, or high school record.</p>
-                            <p>Non-US documents are accepted as long as date of birth is accurate.</p>
-                            <input class="input-group-text" id = "file2" type = "file">
-                            <a href="#" id="clear2"  onclick = "makeClear('file2')">Clear</a><br>
-                                
-                                <h5>You must show proof of residency.</h5>
-                                <p>Acceptable documents include utility bill, government issued letter, or a bank statement.</p>
-                                <p>To become a full time resident of Illinois, you must maintain your residence for at least one full year.</p>
-                                <input class="input-group-text" id = "file3" type = "file">
-                                <a href="#" id="clear3" onclick = "makeClear('file3')">Clear</a><br><br>
-                                    
-                                    <button type="submit" class="btn btn-primary">Submit</button><br>
-                                    <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
-                                        30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will
-                                        be approved within 2-3 business days.</small>
-                                    </div>
-            </body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="layout.css">
+<title>State ID - DMV Services</title>
+
+<body>
+    <div class="container"
+        style="background-image: url('img/stateidimg.PNG'); background-repeat: no-repeat; background-size: 25% 25%; background-position-x: right; background-position-y: center;">
+        <img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal3"
+            width="150" height="150" align="right" alt="Illinois State Seal">
+        <br>
+        <h1>Get a State Identification Card </h1><br>
+        <ul class="breadcrumb" style="background-color: transparent;">
+            <li><a href="./introscreen.html">Login </a><span class="divider">/</span></li>
+            <li><a href="./menuscreen.html">Menu </a><span class="divider">/</span></li>
+            <li class="breadcrumb-item active">StateID <span class="divider">/</span></li>
+        </ul>
+        <p>All residents must submit the required documents to be considered for a state ID.</p>
+        <p>All documents must be original. Copies of documents will not be allowed. The system and</p>
+        <p>DMV representatives will verify originality of documents.</p>
+        <p>All documents will be submitted as proof of residency under Illinois law.</p><br>
+
+        <h5>You must show proof a Social Security Number</h5>
+        <p>Acceptable documents include Social Security card, military record, or driver's license record. </p>
+        <input class="input-group-text" id="file1" type="file">
+        <a href="#" id="clear1" onclick="makeClear('file1')">Clear</a><br>
+
+        <h5>You must show your date of birth.</h5>
+        <p>Acceptable documents include birth certificate, passport, or high school record.</p>
+        <p>Non-US documents are accepted as long as date of birth is accurate.</p>
+        <input class="input-group-text" id="file2" type="file">
+        <a href="#" id="clear2" onclick="makeClear('file2')">Clear</a><br>
+
+        <h5>You must show proof of residency.</h5>
+        <p>Acceptable documents include utility bill, government issued letter, or a bank statement.</p>
+        <p>To become a full time resident of Illinois, you must maintain your residence for at least one full year.</p>
+        <input class="input-group-text" id="file3" type="file">
+        <a href="#" id="clear3" onclick="makeClear('file3')">Clear</a><br><br>
+
+        <button type="submit" class="btn btn-primary">Submit</button><br>
+        <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
+            30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will
+            be approved within 2-3 business days.</small>
+    </div>
+</body>
+
 </html>
