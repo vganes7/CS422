@@ -16,7 +16,6 @@
         margin-left: 171px;
         font-size: 18px;
     }
-
     .dot_set2 {
         height: 149px;
         width: 148px;
@@ -31,7 +30,6 @@
         margin-bottom: 30px;
         font-size: 18px;
     }
-
     .dot_set3 {
         height: 149px;
         width: 148px;
@@ -45,7 +43,6 @@
         padding-top: 57px;
         font-size: 18px;
     }
-
     .container {
         padding-top: 8px;
     }
@@ -53,7 +50,6 @@
 <script>
     function change(x) {
         x.style.background = "rgb(255,233,15)";
-
     }
     function normalImg(x) {
         x.style.background = "white";
@@ -67,3 +63,44 @@
 
 <div class="bodybg2"> </div> <br><br>
 <h2>DEPARTMENT OF MOTOR VEHICLE</h2> <br>
+<img src="http://cdn.firespring.com/images/d63cabb1-989d-4204-9549-5fabac6f433e.jpg" id="illinois_seal2" width="150"
+    height="150" alt="Illinois State Seal">
+<div class="container">
+    <ul class="breadcrumb breadcrumb-arrow" style="background-color: transparent;">
+        <li><a href="./introscreen.html">Login </a><span class="divider">/</span></li>
+        <li class="breadcrumb-item active">Menu <span class="divider">/</span></li>
+    </ul>
+    <h3>What can we help you with today?</h3> <br>
+    <div class="row">
+
+        <!-- <div class="col" id="img_il">
+                             </div> -->
+        <div style="text-align:center">
+
+            <span class="dot_set1" onmouseover="change(this)" onmouseout="normalImg(this)"
+                onclick="window.location.href='stateid.html'">Get a state ID </span>
+            <span class="dot_set1" onmouseover="change(this)" onmouseout="normalImg(this)"
+                onclick="window.location.href='scheduleappt.html'">Schedule Appointment</span>
+            <span class="dot_set1" onmouseover="change(this)" onmouseout="normalImg(this)"
+                onclick="window.location.href='sticker.html'">Receive a New sticker</span>
+        </div>
+    </div>
+    <div class="row">
+        <div style="text-align:center">
+            <span class="dot_set2" onmouseover="change(this)" onmouseout="normalImg(this)"
+                onclick="window.location.href='getlicense.html'">Apply for new driver's license</span>
+            <span class="dot_set2" onmouseover="change(this)" onmouseout="normalImg(this)">Renew Driver license</span>
+
+        </div>
+    </div>
+    <div class="row">
+        <div style="text-align:center">
+            <span class="dot_set3" onmouseover="change(this)" onmouseout="normalImg(this)">Report Vehicle</span>
+        </div>
+    </div>
+
+</div>
+</div>
+</body>
+
+</html>
