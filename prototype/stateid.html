@@ -12,9 +12,11 @@
 
     }
 
-
-
-
+    function alertfunc(){
+        if(confirm("Do you want to exit the Page?")){
+            window.location.href='menuscreen.html';
+        }
+    }
 
 </script>
 
@@ -58,7 +60,8 @@
         <input class="input-group-text" id="file3" type="file">
         <a href="#" id="clear3" onclick="makeClear('file3')">Clear</a><br><br>
 
-        <button type="submit" class="btn btn-primary">Submit</button><br>
+        <button type="submit" class="btn btn-primary" style="margin-right:30px;">Submit</button>
+        <button type="Cancel" class="btn btn-primary" onclick="alertfunc()">Cancel</button><br>
         <small>Documentation that has been submitted for approval on weekdays from 8am-5pm will be approved within
             30 minutes of submission. Submissions outside of that time frame and/or on state/federal holidays will
             be approved within 2-3 business days.</small>
