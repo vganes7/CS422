@@ -134,3 +134,47 @@ h6 {
     filter: blur(5px);
     z-index: -1;
 }
+
+    .dot_set1 {
+        height: 149px;
+        width: 148px;
+        background: white;
+        color: black;
+        margin-right: 10px;
+        border-radius: 50%;
+        display: inline-table;
+        text-align: center;
+        padding-top: 52px;
+        margin-bottom: 30px;
+        margin-left: 171px;
+        font-size: 18px;
+    }
+
+    .dot_set2 {
+        height: 149px;
+        width: 148px;
+        background: white;
+        color: black;
+        margin-left: 336px;
+        margin-right: -130px;
+        border-radius: 50%;
+        display: inline-table;
+        text-align: center;
+        padding-top: 52px;
+        margin-bottom: 30px;
+        font-size: 18px;
+    }
+
+    .dot_set3 {
+        height: 149px;
+        width: 148px;
+        background: white;
+        color: black;
+        margin-left: 517px;
+        margin-right: 10px;
+        border-radius: 50%;
+        display: inline-table;
+        text-align: center;
+        padding-top: 57px;
+        font-size: 18px;
+    }
